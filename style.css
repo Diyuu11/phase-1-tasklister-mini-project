@@ -1,9 +1,60 @@
 body {
-  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 100vh; /* Make the body take up full viewport height */
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Set a clean font */
+  background-color: yellow; /* yellow background color */
 }
-#create-task-form{
-  text-align: center;
-}
+
 h1 {
-  text-align: center;
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* Stack input elements */
+  align-items: center; /* Center form elements */
+  margin-bottom: 20px; /* Space below the form */
+}
+
+input[type="text"] {
+  padding: 10px; /* Padding for text input */
+  margin-bottom: 10px; /* Space below input */
+  width: 250px; /* Set a width for the input */
+  border: 1px solid #ccc; /* Border style */
+  border-radius: 5px; /* Rounded corners */
+}
+
+input[type="submit"], .delete-button {
+  padding: 10px 15px; /* Padding for buttons */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 5px; /* Space above buttons */
+}
+
+input[type="submit"]:hover, .delete-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  width: 250px; /* Set a width for the task list */
+}
+
+li {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between task and delete button */
+  align-items: center; /* Center items vertically */
+  background-color: white; /* Task background */
+  padding: 10px; /* Padding for tasks */
+  margin-bottom: 10px; /* Space between tasks */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
