@@ -1,3 +1,9 @@
 body {
-  color:brown
+  background-color: yellow;
+}
+#create-task-form{
+  text-align: center;
+}
+h1 {
+  text-align: center;
 }
